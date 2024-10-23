@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
+import type { RouteRecordRaw } from 'vue-router'
 import ProfessionalExperiences from '../views/ProfessionalExperiencesView.vue'
 
-// Define the routes with proper typing
-const routes: RouteRecordRaw[] = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'experiences',
@@ -25,7 +25,6 @@ const routes: RouteRecordRaw[] = [
   },
 ]
 
-// Create and type the router instance
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
