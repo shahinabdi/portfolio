@@ -1,16 +1,10 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { createHtmlPlugin } from 'vite-plugin-html'
 
 export default defineConfig({
-  base: '/shahinabdi.github.io/',
-  plugins: [
-    vue(),
-    createHtmlPlugin({
-      minify: true,
-    }),
-  ],
+  base: './',
+  plugins: [vue()],
   server: {
     host: true,
     port: 5173,
